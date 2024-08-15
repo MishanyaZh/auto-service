@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 
 export const metadata = {
-  title: 'Auto Service',
-  description: 'Auto Service Station - Najlepsze usługi serwisowe',
+  title: 'Vimar Auto Serwis',
+  description: 'Vimar Auto Serwis - Najlepsze usługi serwisowe',
 };
 
 interface LayoutProps {
