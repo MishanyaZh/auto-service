@@ -18,7 +18,7 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="pl" suppressHydrationWarning className="h-full">
-      <body className="h-full flex flex-col">
+      <body className="">
         <Providers>
           <Header />
           <Navbar />

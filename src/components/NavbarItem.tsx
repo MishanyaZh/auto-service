@@ -12,7 +12,7 @@ const NavbarItem = ({ title, param }: Props) => {
 
   return (
     <Link
-      className={`hover:text-orange-500 font-semibold
+      className={`hover:text-orange-500 font-semibold text-shadow-indigo
         ${section === param ? 'text-orange-500 font-semibold' : ''}`}
       href={`/?section=${param}`}
     >

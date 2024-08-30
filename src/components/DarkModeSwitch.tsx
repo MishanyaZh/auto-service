@@ -16,7 +16,7 @@ const DarkModeSwitch = (props: Props) => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="cursor-pointer p-1 rounded-md border border-gray-800 hover:border-orange-500 hover:text-amber-500 shadow-lg shadow-indigo-500/50">
+    <div className="icon-box">
       {mounted &&
         (currentTheme === 'dark' ? (
           <MdLightMode onClick={() => setTheme('light')} className="text-xl" />

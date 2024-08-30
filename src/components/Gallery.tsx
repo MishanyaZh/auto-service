@@ -12,16 +12,21 @@ const Gallery = () => {
 
   return (
     <section className="p-4">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4">Galeria</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 text-shadow-indigo">
+        Galeria
+      </h2>
       <div className="grid grid-cols-2 gap-4 items-center md:grid-cols-4">
         {images.map(({ id, src }) => (
-          <div key={id} className="relative h-72 flex justify-center ">
+          <div
+            key={id}
+            className="relative h-72 flex justify-center rounded-md p-2 custom-shadow"
+          >
             <Image
               src={src}
               alt="photo"
               height={200}
               width={200}
-              className="rounded-md group-hover:opacity-75 transition-opacity duration-300 w-auto h-auto"
+              className="rounded-md w-auto h-auto"
               priority={true}
               placeholder="blur"
               blurDataURL={spinnerUrl}

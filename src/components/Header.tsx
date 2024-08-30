@@ -1,11 +1,24 @@
 'use client';
 
+import Image from 'next/image';
 import DarkModeSwitch from './DarkModeSwitch';
+import IconBox from './common/IconBox';
 
 const Header = () => {
   return (
-    <header className="flex justify-center items-center p-4">
-      <h1 className="text-3xl font-bold mr-1 flex flex-grow text-shadow-indigo">
+    <header className="flex justify-between items-center p-4">
+      <IconBox bg>
+        <Image
+          src="/images/logo.png"
+          alt="photo"
+          height={30}
+          width={30}
+          className="rounded-md w-auto h-auto"
+          priority={true}
+          layout=""
+        />
+      </IconBox>
+      <h1 className="text-3xl font-bold ml-1 mr-1 flex text-shadow-indigo header-gradient">
         Vimar Auto Serwis
       </h1>
       <DarkModeSwitch />

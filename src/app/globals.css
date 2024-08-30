@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-shadow {
+  @apply shadow-lg shadow-indigo-500/100 dark:shadow-indigo-500/50;
+}
+.icon-box {
+  @apply cursor-pointer p-1 rounded-md border border-gray-800 hover:text-orange-500 custom-shadow;
+}
+.icon-box-bg {
+  @apply bg-gradient-conic dark:from-indigo-800 dark:via-gray-900 dark:to-indigo-800 from-indigo-400 via-gray-600 to-indigo-400 border-none;
+}
+.header-gradient {
+  @apply bg-gradient-to-br from-slate-900 to-indigo-900 dark:from-slate-300 dark:to-indigo-700 bg-clip-text text-transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
