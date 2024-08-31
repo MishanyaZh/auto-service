@@ -1,7 +1,7 @@
 'use client';
 
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
-
+import IconBox from './common/IconBox';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
@@ -16,14 +16,14 @@ const DarkModeSwitch = (props: Props) => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="icon-box">
+    <IconBox animation>
       {mounted &&
         (currentTheme === 'dark' ? (
           <MdLightMode onClick={() => setTheme('light')} className="text-xl" />
         ) : (
           <MdDarkMode onClick={() => setTheme('dark')} className="text-xl" />
         ))}
-    </div>
+    </IconBox>
   );
 };
 

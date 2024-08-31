@@ -7,7 +7,7 @@ import IconBox from './common/IconBox';
 const Header = () => {
   return (
     <header className="flex justify-between items-center p-4">
-      <IconBox bg>
+      <IconBox animation>
         <Image
           src="/images/logo.png"
           alt="photo"
@@ -21,7 +21,9 @@ const Header = () => {
       <h1 className="text-3xl font-bold ml-1 mr-1 flex text-shadow-indigo header-gradient">
         Vimar Auto Serwis
       </h1>
-      <DarkModeSwitch />
+      <IconBox bg animation>
+        <DarkModeSwitch />
+      </IconBox>
     </header>
   );
 };

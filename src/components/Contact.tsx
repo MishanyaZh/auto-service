@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import Loading from '@/app/loading';
+import IconBox from './common/IconBox';
 import { googleMapUrl } from '@/app/constants';
 import { FaFacebook } from 'react-icons/fa6';
 import { FaPhoneSquareAlt } from 'react-icons/fa';
@@ -29,9 +30,9 @@ const Contact = () => {
         href="tel:+48123456789"
         className="flex flex-row items-center align-baseline gap-2 text-shadow-indigo"
       >
-        <div className="icon-box">
+        <IconBox>
           <FaPhoneSquareAlt className="text-2xl" />
-        </div>
+        </IconBox>
         <span>+48 782 362 122</span>
       </a>
 
@@ -40,9 +41,9 @@ const Contact = () => {
         href="https://www.facebook.com/profile.php?id=61560001088461"
         className="flex flex-row items-center align-baseline gap-2 text-shadow-indigo"
       >
-        <div className="icon-box">
+        <IconBox>
           <FaFacebook className="text-2xl hover:text-orange-500" />
-        </div>
+        </IconBox>
         <span>Vimar AutoSerwis</span>
       </a>
 
@@ -51,9 +52,9 @@ const Contact = () => {
         href="https://maps.app.goo.gl/BXTTWio5pG3V8VT39"
         className="flex flex-row items-center align-baseline gap-2 text-shadow-indigo"
       >
-        <div className="icon-box">
+        <IconBox>
           <FaMapMarkedAlt className="text-2xl hover:text-orange-500" />
-        </div>
+        </IconBox>
         <span>Franciszka Walczaka 106, Gorzów Wielkopolski</span>
       </a>
 

@@ -16,6 +16,19 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        gradientAnimation: {
+          '0%': { 'background-position': '100% 0%' },
+          '50%': { 'background-position': '0% 100%' },
+          '100%': { 'background-position': '100% 0%' },
+        },
+      },
+      animation: {
+        'gradient-move': 'gradientAnimation 15s linear infinite',
+      },
+      backgroundSize: {
+        '1000%': '1000% 1000%',
+      },
     },
   },
   plugins: [

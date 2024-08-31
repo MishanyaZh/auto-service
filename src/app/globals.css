@@ -11,6 +11,9 @@
 .icon-box-bg {
   @apply bg-gradient-conic dark:from-indigo-800 dark:via-gray-900 dark:to-indigo-800 from-indigo-400 via-gray-600 to-indigo-400 border-none;
 }
+.icon-box-animation {
+  @apply bg-gradient-radial from-indigo-800 via-gray-900 to-indigo-400 bg-1000% animate-gradient-move;
+}
 .header-gradient {
   @apply bg-gradient-to-br from-slate-900 to-indigo-900 dark:from-slate-300 dark:to-indigo-700 bg-clip-text text-transparent;
 }
