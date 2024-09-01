@@ -2,14 +2,14 @@ import Image from 'next/image';
 import React from 'react';
 import { spinnerUrl } from './constants';
 
-type Props = {};
+type Props = { height?: number; width?: number; center?: boolean };
 
-const Loading = (props: Props) => {
+const Loading = ({ height = 200, width = 200, center }: Props) => {
   return (
-    <div className="flex justify-center mt-16">
+    <div className={`flex justify-center ${!center && 'mt-16'} `}>
       <Image
-        height={200}
-        width={200}
+        height={height}
+        width={width}
         src={spinnerUrl}
         alt="loading..."
         priority={true}

@@ -1,11 +1,8 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import Loading from '@/app/loading';
-import IconBox from './common/IconBox';
 import { googleMapUrl } from '@/app/constants';
-import { FaFacebook } from 'react-icons/fa6';
-import { FaPhoneSquareAlt } from 'react-icons/fa';
-import { FaMapMarkedAlt } from 'react-icons/fa';
+import ContactItems from './common/ContactItems';
 
 const Contact = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,37 +23,7 @@ const Contact = () => {
         Kontakt
       </h2>
 
-      <a
-        href="tel:+48123456789"
-        className="flex flex-row items-center align-baseline gap-2 text-shadow-indigo"
-      >
-        <IconBox>
-          <FaPhoneSquareAlt className="text-2xl" />
-        </IconBox>
-        <span>+48 782 362 122</span>
-      </a>
-
-      <a
-        target="_blank"
-        href="https://www.facebook.com/profile.php?id=61560001088461"
-        className="flex flex-row items-center align-baseline gap-2 text-shadow-indigo"
-      >
-        <IconBox>
-          <FaFacebook className="text-2xl hover:text-orange-500" />
-        </IconBox>
-        <span>Vimar AutoSerwis</span>
-      </a>
-
-      <a
-        target="_blank"
-        href="https://maps.app.goo.gl/BXTTWio5pG3V8VT39"
-        className="flex flex-row items-center align-baseline gap-2 text-shadow-indigo"
-      >
-        <IconBox>
-          <FaMapMarkedAlt className="text-2xl hover:text-orange-500" />
-        </IconBox>
-        <span>Franciszka Walczaka 106, Gorzów Wielkopolski</span>
-      </a>
+      <ContactItems />
 
       <div className="mt-4">
         <h3 className="text-xl mb-2 text-shadow-indigo">

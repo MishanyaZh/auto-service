@@ -4,6 +4,7 @@ import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import IconBox from './common/IconBox';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import Loading from '@/app/loading';
 
 type Props = {};
 
@@ -16,14 +17,23 @@ const DarkModeSwitch = (props: Props) => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <IconBox animation>
-      {mounted &&
-        (currentTheme === 'dark' ? (
-          <MdLightMode onClick={() => setTheme('light')} className="text-xl" />
+    <>
+      {mounted ? (
+        currentTheme === 'dark' ? (
+          <IconBox animation onClick={() => setTheme('light')}>
+            <MdLightMode className="text-2xl" />
+          </IconBox>
         ) : (
-          <MdDarkMode onClick={() => setTheme('dark')} className="text-xl" />
-        ))}
-    </IconBox>
+          <IconBox animation onClick={() => setTheme('dark')}>
+            <MdDarkMode className="text-2xl" />
+          </IconBox>
+        )
+      ) : (
+        <IconBox bg>
+          <Loading height={24} width={24} center />
+        </IconBox>
+      )}
+    </>
   );
 };
 
