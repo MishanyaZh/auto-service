@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Vimar Auto Serwis',
   description: 'Vimar Auto Serwis - Najlepsze usługi serwisowe',
   keywords:
-    'автосервіс Gorzow, ремонт авто, Vimar Auto Serwisбerwis samochodowy Gorzów, naprawa samochodów, Vimar Auto Serwis, diagnostyka samochodowa, wymiana opon, mechanik Gorzów, usługi serwisowe, warsztat samochodowy, przegląd samochodu, naprawa silnika',
+    'автосервіс Gorzow, ремонт авто, Vimar Auto Serwis, serwis samochodowy Gorzów, naprawa samochodów, diagnostyka samochodowa, wymiana opon, mechanik Gorzów, usługi serwisowe, warsztat samochodowy, przegląd samochodu, naprawa silnika',
   authors: [
     { name: 'Vimar Auto Serwis', url: 'https://auto-service-vm.vercel.app/' },
   ],
