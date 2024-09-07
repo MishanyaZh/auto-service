@@ -29,6 +29,10 @@ const config: Config = {
       backgroundSize: {
         '1000%': '1000% 1000%',
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)'],
+      },
     },
   },
   plugins: [

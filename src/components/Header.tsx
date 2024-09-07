@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import DarkModeSwitch from './DarkModeSwitch';
 import IconBox from './common/IconBox';

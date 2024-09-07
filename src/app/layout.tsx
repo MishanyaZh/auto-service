@@ -1,10 +1,16 @@
 import { ReactNode } from 'react';
+import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Providers from './Providers';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: 'Vimar Auto Serwis',
@@ -17,6 +23,7 @@ export const metadata: Metadata = {
   verification: {
     google: 'Xguf42HzpzRwMV78oalrJxBd8hdv5xYQhy11jG4CLWc',
   },
+  metadataBase: new URL('https://auto-service-vm.vercel.app/'),
 };
 
 interface LayoutProps {
@@ -26,7 +33,7 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="pl" suppressHydrationWarning className="h-full">
-      <body className="">
+      <body className={`${inter.variable} font-sans`}>
         <Providers>
           <Header />
           <Navbar />

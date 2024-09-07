@@ -1,5 +1,3 @@
-'use client';
-
 import React, { Suspense } from 'react';
 import NavbarItem from '@/components/NavbarItem';
 import Loading from '@/app/loading';
