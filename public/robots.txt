@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://auto-service-vm.vercel.app
+
+# Sitemaps
+Sitemap: https://auto-service-vm.vercel.app/sitemap.xml
