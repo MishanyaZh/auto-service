@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import Head from 'next/head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
@@ -15,6 +14,9 @@ export const metadata: Metadata = {
   authors: [
     { name: 'Vimar Auto Serwis', url: 'https://auto-service-vm.vercel.app/' },
   ],
+  verification: {
+    google: 'Xguf42HzpzRwMV78oalrJxBd8hdv5xYQhy11jG4CLWc',
+  },
 };
 
 interface LayoutProps {
@@ -24,13 +26,6 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="pl" suppressHydrationWarning className="h-full">
-      <Head>
-        {/* Google site verification meta tag */}
-        <meta
-          name="google-site-verification"
-          content="Xguf42HzpzRwMV78oalrJxBd8hdv5xYQhy11jG4CLWc"
-        />
-      </Head>
       <body className="">
         <Providers>
           <Header />
