@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      textShadow: {
-        indigo: '2px 2px 4px rgba(99, 102, 241, 0.5)',
-      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -31,15 +28,6 @@ const config: Config = {
         'gradient-move': 'gradientAnimation 10s linear infinite',
         'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
       },
-      animationDelay: {
-        '200': '100ms',
-        '400': '400ms',
-        '600': '600ms',
-        '800': '800ms',
-        '1000': '1000ms',
-        '1200': '1200ms',
-        '1400': '1400ms',
-      },
       backgroundSize: {
         '1000%': '1000% 1000%',
       },
@@ -54,6 +42,9 @@ const config: Config = {
       const newUtilities = {
         '.text-shadow-indigo': {
           textShadow: '2px 2px 4px rgba(99, 102, 241, 0.5)', // Tailwind's indigo-500 color
+        },
+        '.dark .text-shadow-indigo': {
+          textShadow: '2px 2px 4px rgba(99, 102, 241, 1)',
         },
       };
 
