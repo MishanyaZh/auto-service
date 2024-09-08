@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
   return (
     <Suspense fallback={<Loading />}>
-      <div className="flex bg-gradient-to-r from-gray-300 to-gray-600 p-4 justify-center gap-6 custom-shadow">
+      <div className="flex bg-gradient-to-r from-gray-300 to-gray-600 p-4 justify-center gap-8 custom-shadow">
         {items.map(({ title, param, id }) => (
           <NavbarItem key={id} title={title} param={param} />
         ))}

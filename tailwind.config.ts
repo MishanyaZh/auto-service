@@ -22,9 +22,23 @@ const config: Config = {
           '50%': { 'background-position': '0% 100%' },
           '100%': { 'background-position': '100% 0%' },
         },
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
-        'gradient-move': 'gradientAnimation 15s linear infinite',
+        'gradient-move': 'gradientAnimation 10s linear infinite',
+        'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+      },
+      animationDelay: {
+        '200': '100ms',
+        '400': '400ms',
+        '600': '600ms',
+        '800': '800ms',
+        '1000': '1000ms',
+        '1200': '1200ms',
+        '1400': '1400ms',
       },
       backgroundSize: {
         '1000%': '1000% 1000%',

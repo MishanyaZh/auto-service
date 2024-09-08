@@ -16,7 +16,7 @@ const Header = () => {
           layout=""
         />
       </IconBox>
-      <h1 className="text-3xl font-bold ml-1 mr-1 flex text-shadow-indigo header-gradient">
+      <h1 className="text-2xl sm:text-3xl font-bold ml-1 mr-1 flex text-shadow-indigo header-gradient">
         Vimar Auto Serwis
       </h1>
       <IconBox bg animation>
