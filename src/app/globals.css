@@ -32,3 +32,24 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.backgroundContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.backgroundContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./opengraph-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px) opacity(0.9);
+  opacity: 0.1;
+  z-index: -1;
+}
