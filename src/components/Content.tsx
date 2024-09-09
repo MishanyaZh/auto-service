@@ -1,14 +1,10 @@
-'use client';
-
-import { useSearchParams } from 'next/navigation';
 import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
 import Contact from '@/components/Contact';
 import { NAV_TABS } from '@/app/constants';
 
-const Content = () => {
-  const searchParams = useSearchParams();
-  const section = searchParams.get('section');
+const Content = ({ searchParams }: { searchParams: { section?: string } }) => {
+  const section = searchParams.section || null;
 
   const getContent = (section: string | null) => {
     switch (section) {
