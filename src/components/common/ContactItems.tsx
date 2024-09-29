@@ -10,7 +10,7 @@ const ContactItems = ({ footer }: Props) => {
   return (
     <>
       <a
-        href="tel:+48123456789"
+        href="tel:+48 782 362 122"
         className="flex flex-row items-center align-baseline gap-4 text-shadow-indigo"
       >
         <IconBox>
